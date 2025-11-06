@@ -1,0 +1,16 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Acemcp specific
+.acemcp_index/
+.acemcp_index_dev/
+.secrets.toml
+settings.local.toml
