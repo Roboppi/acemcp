@@ -177,6 +177,10 @@ def run() -> None:
 
         get_log_broadcaster()  # Initialize the broadcaster
 
+        if is_port_listening(args.web_port):
+            # 避免重复启动
+            args.web_port = None
+
     # Setup logging after log broadcaster is initialized
     # Intercept stdlib logging (uvicorn, fastapi) to prevent stdout pollution
     setup_logging(intercept_stdlib=True)

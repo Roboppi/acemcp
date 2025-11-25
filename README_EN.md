@@ -333,6 +333,14 @@ To enable the web interface, use the `--web-port` argument when starting the ser
 
 ## Recent Updates
 
+### Version 0.1.9
+
+**New Features:**
+  - Automatically detects if the web port is in use; if so, it reuses the web panel.
+
+**Improvements:**
+- [fix Google Antigravity MCP "invalid trailing data" error](https://github.com/qy527145/acemcp/pull/12)
+
 ### Version 0.1.8
 
 **New Features:**
